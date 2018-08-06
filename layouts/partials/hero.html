@@ -1,0 +1,12 @@
+{{ "<!-- Hero -->" | safeHTML }}
+<header>
+  <div class="container">
+    <div id="particles-js"></div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="{{ .Site.BaseURL }}js/particles.js"></script>
+      <div class="intro-text">
+        <!-- <div class="intro-lead-in">{{ with .Site.Params.hero.title }}{{ . | markdownify }}{{ end }}</div> -->
+        <div class="intro-heading">{{ with .Site.Params.hero.subtitle }}{{ . | markdownify }}{{ end }}</div>
+        <a href="#services" class="page-scroll btn btn-xl">{{ with .Site.Params.hero.buttonText }}{{ . }}{{ end }}</a>
+  </div>
+</header>
